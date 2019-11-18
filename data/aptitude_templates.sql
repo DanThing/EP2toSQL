@@ -1,16 +1,15 @@
-DROP TABLE aptitude_templates;
 CREATE TABLE aptitude_templates (
-    list_name VARCHAR(13),
-    list_description VARCHAR(117),
-    list_aptitudes_cognition INT,
-    list_aptitudes_intuition INT,
-    list_aptitudes_reflexes INT,
-    list_aptitudes_savvy INT,
-    list_aptitudes_somatics INT,
-    list_aptitudes_willpower INT,
-    list_resource VARCHAR(28),
-    list_reference INT,
-    list_id VARCHAR(36)
+    name VARCHAR(13),
+    description VARCHAR(117),
+    cognition INT,
+    intuition INT,
+    reflexes INT,
+    savvy INT,
+    somatics INT,
+    willpower INT,
+    resource VARCHAR(28),
+    reference INT,
+    id VARCHAR(36)
 );
 INSERT INTO aptitude_templates VALUES
     ('Actioneer','You are more comfortable with physicality than talking or thinking.',10,15,20,10,20,15,'Eclipse Phase Second Edition',NULL,'f4eb8984-8a3d-41a1-9e79-4dc6716a5358'),
