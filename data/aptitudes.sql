@@ -1,10 +1,10 @@
 CREATE TABLE aptitudes (
-    list_name VARCHAR(9),
-    list_description VARCHAR(130),
-    list_short_name VARCHAR(3),
-    list_resource VARCHAR(30),
-    list_reference INT,
-    list_id VARCHAR(36) CONSTRAINT list_id_pk PRIMARY KEY);
+    name VARCHAR(9),
+    description VARCHAR(130),
+    short_name VARCHAR(3),
+    resource VARCHAR(30),
+    reference INT,
+    id VARCHAR(36) CONSTRAINT id_pk PRIMARY KEY);
 INSERT INTO aptitudes VALUES
     ('Cognition','represents your intelligence, problem-solving talent, and capacity for logical analysis.','COG','Eclipse Phase Second Edition',NULL,'0418079e-2e71-4863-b6f3-bf48c5b787b6'),
     ('Intuition','is your gut instinct and ability to evaluate on the fly.  It includes physical awareness, creativity, cleverness, and cunning.','INT','Eclipse Phase Second Edition',NULL,'db418f01-4e3f-4006-8fd0-324a07239bb1'),
